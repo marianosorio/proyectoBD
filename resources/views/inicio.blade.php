@@ -29,7 +29,7 @@
             top: 20px; /* Espacio desde la parte superior */
             right: 20px; /* Espacio desde la derecha */
             padding: 10px 20px; /* Espaciado del botón */
-            background-color: #007BFF; /* Color de fondo del botón */
+            background-color: acb6c5 /* Color de fondo del botón */
             color: white; /* Color del texto del botón */
             border: none; /* Sin borde */
             border-radius: 5px; /* Bordes redondeados */
@@ -44,6 +44,6 @@
 </head>
 <body>
     <h1>Conoce nuestros vehículos y <br> proveedores</h1>
-    <button class="button">Mi Botón</button> <!-- Botón añadido -->
+    <button class="button">Cerrar sesión</button> <!-- Botón añadido -->
 </body>
 </html>
