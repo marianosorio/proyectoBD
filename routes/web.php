@@ -33,3 +33,8 @@ Route::get('/inicio', function () {
 Route::get('/pruebita', function () {
     return view('prueba');
 });
+
+Route::get('/buscador', function () {
+    return view('buscador');
+});
+
