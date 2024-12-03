@@ -38,3 +38,6 @@ Route::get('/buscador', function () {
     return view('buscador');
 });
 
+Route::get('/concesionario', function () {
+    return view('concesionario');
+});

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interfaz de Usuario</title>
+    <title>Concesionario</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -61,7 +61,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Buscador de Vehiculos</h1>
+        <h1>Concesionario</h1>
         <div class="search-container">
             <input type="text" id="search" placeholder="Buscar...">
             <button onclick="cerrarSesion()">Cerrar Sesión</button>
@@ -69,10 +69,9 @@
         <table id="data-table">
             <thead>
                 <tr>
-                    <th>ID Modelo</th>
-                    <th>Color</th>
-                    <th>No. Motor</th>
-                    <th>Transmisión</th>
+                    <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Número de Teléfono</th>
                 </tr>
             </thead>
             <tbody>
