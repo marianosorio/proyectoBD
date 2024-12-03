@@ -25,25 +25,25 @@
         }
 
         .button {
-            position: absolute; /* Posiciona el botón de forma absoluta */
-            top: 20px; /* Espacio desde la parte superior */
-            right: 20px; /* Espacio desde la derecha */
-            padding: 10px 20px; /* Espaciado del botón */
-            background-color: acb6c5 /* Color de fondo del botón */
-            color: white; /* Color del texto del botón */
-            border: none; /* Sin borde */
-            border-radius: 5px; /* Bordes redondeados */
-            cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-            font-size: 16px; /* Tamaño de la fuente */
+            position: absolute; 
+            top: 20px; 
+            right: 20px; 
+            padding: 10px 20px; 
+            background-color: acb6c5 
+            color: white; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px;
         }
 
         .button:hover {
-            background-color: #0056b3; /* Color de fondo al pasar el mouse */
+            background-color: #0056b3; 
         }
     </style>
 </head>
 <body>
     <h1>Conoce nuestros vehículos y <br> proveedores</h1>
-    <button class="button">Cerrar sesión</button> <!-- Botón añadido -->
+    <button class="button">Cerrar sesión</button> 
 </body>
 </html>
