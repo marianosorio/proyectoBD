@@ -25,6 +25,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
+Route::get('/inicio', function () {
+    return view('inicio');
+});
+
+
 Route::get('/pruebita', function () {
     return view('prueba');
 });

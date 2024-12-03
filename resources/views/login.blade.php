@@ -1,118 +1,92 @@
-<section class="contenedor-bienvenida"> 
-<div class="login-container"> 
-  <h1>Inicio de sesión</h1> 
-  <p>Inicia sesión con tu cuenta</p> 
-  <p>Recuerda especificar tu credencial para acceso</p> 
- 
-  <form> 
-    <div class="form-group"> 
-      <label for="credential-type">Tipo de credencial:</label> 
-      <div class="credential-options"> 
-        <div class="credential-option"> 
-          <input type="radio" id="credential-marketing" name="credential-type" value="marketing" checked> 
-          <label for="credential-marketing">Marketing</label> 
-        </div> 
-        <div class="credential-option"> 
-          <input type="radio" id="credential-cliente" name="credential-type" value="cliente"> 
-          <label for="credential-cliente">Cliente</label> 
-        </div> 
-      </div> 
-    </div> 
- 
-    <div class="form-group"> 
-      <label for="assigned-id">ID asignada:</label> 
-      <input type="text" id="assigned-id" name="assigned-id" placeholder="Ingresa tu ID asignada"> 
-    </div> 
- 
-    <button type="submit" class="btn-login">Iniciar sesión</button> 
-  </form> 
-</div> 
-<div id="contenedor-cel"> 
-  <img class="" style="width:101%;" src="/proyectoBD/public/img/Landingimg.png"> 
-</div> 
-</section> 
- 
-<style> 
-/* General Styles */ 
-body { 
-  font-family: Arial, sans-serif; 
-  background-color: #000; 
-  margin: 0; 
-  padding: 0; 
-} 
- 
-/* Login Container */ 
-.login-container { 
-  background-color: rgba(31, 41, 55, 0.8); /* Fondo semi-transparente */
-  background-image: url('ruta/a/tu/imagen-de-fondo.jpg'); /* Cambia esta ruta */
-  background-size: cover;
-  background-position: center;
-  padding: 40px; 
-  border-radius: 8px; 
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); 
-  max-width: 400px; 
-  margin: 100px auto; 
-  position: relative; 
-  z-index: 1; 
-} 
- 
-/* Headings */ 
-h1 { 
-  text-align: center; 
-  color: #f3f4f6; 
-  margin-bottom: 20px; 
-} 
- 
-/* Form Styles */ 
-.form-group { 
-  margin-bottom: 20px; 
-} 
- 
-label { 
-  display: block; 
-  font-weight: bold; 
-  color: #9ca3af; 
-  margin-bottom: 5px; 
-} 
- 
-.credential-options { 
-  display: flex; 
-  justify-content: space-between; 
-} 
- 
-.credential-option { 
-  display: flex; 
-  align-items: center; 
-} 
- 
-.credential-option input[type="radio"] { 
-  margin-right: 5px; 
-  accent-color: #6b7280; 
-} 
- 
-input[type="text"] { 
-  width: 100%; 
-  padding: 10px; 
-  border: 1px solid #4b5563; 
-  border-radius: 4px; 
-  background-color: #1f2937; 
-  color: #f3f4f6; 
-} 
- 
-/* Button Styles */ 
-.btn-login { 
-  display: block; 
-  width: 100%; 
-  background-color: #8e1d2b; 
-  color: #fff; 
-  padding: 10px 20px; 
-  border: none; 
-  border-radius: 4px; 
-  cursor: pointer; 
-  font-size: 16px; 
-} 
- 
-.btn-login:hover { 
-  background-color: #480b0e; 
-} 
-</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="\proyectoBD\public\styles\styles.css">
+    <title>Inicio de Sesión</title>
+    
+</head>
+<body>
+    <div class="form-container">
+        <h2 style="font-family:Inter, sans-serif;color:white; text-align: center;">Inicio de Sesión</h2>
+        <form>
+            <p style= "font-family:Inter, sans-serif; color:white; text-align: center;" >Inicia sesión con tu cuenta</p>
+            <p style= "font-family:Inter, sans-serif; color:white" >Recuerda especificar tu credencial para acceso</p>
+            <p style= "font-family:Inter, sans-serif; color:white" >Tipo de credencial:</p>
+            <div class="credential-options">
+                <label>
+                    <input style= "font-family:Inter, sans-serif; color:white"  type="radio" name="credential-type" value="marketing" checked>
+                    Marketing
+                </label>
+                <label>
+                    <input style= "font-family:Inter, sans-serif; color:white" type="radio" name="credential-type" value="cliente">
+                    Cliente
+                </label>
+            </div>
+            <label style= "font-family:Inter, sans-serif; color:white" for="id-asignada">Id asignada:</label>
+            <input type="text" id="id-asignada" name="id-asignada" style="width:93%" required>
+            <button style= "font-family:Inter, sans-serif; color:white" type="submit">Iniciar sesión</button>
+        </form>
+    </div>
+</body>
+</html>
+
+<style>
+        body {
+            background-image: url('/proyectoBD/public/img/loginImg.png');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-container {
+            background-color: rgba(103, 119, 143, 0.7); /* Color con opacidad */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            width: 300px;
+         }
+
+        h2 {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        input[type="text"], input[type="password"], button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .credential-options {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .credential-options label {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .credential-options input[type="radio"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #57090b;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #890507;
+        }
+    </style>

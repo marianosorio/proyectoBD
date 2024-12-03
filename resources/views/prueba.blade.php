@@ -54,36 +54,35 @@
         }
 
         button {
-            background-color: #007bff;
-            color: white;
+            background-color: #57090b;
             cursor: pointer;
         }
 
         button:hover {
-            background-color: #0056b3;
+            background-color: #890507;
         }
     </style>
 </head>
 <body>
     <div class="form-container">
-        <h2>Inicio de Sesión</h2>
+        <h2 style="font-family:Inter, sans-serif;color:white; text-align: center;">Inicio de Sesión</h2>
         <form>
-            <p>Inicia sesión con tu cuenta</p>
-            <p>Recuerda especificar tu credencial para acceso</p>
-            <p>Tipo de credencial:</p>
+            <p style= "font-family:Inter, sans-serif; color:white; text-align: center;" >Inicia sesión con tu cuenta</p>
+            <p style= "font-family:Inter, sans-serif; color:white" >Recuerda especificar tu credencial para acceso</p>
+            <p style= "font-family:Inter, sans-serif; color:white" >Tipo de credencial:</p>
             <div class="credential-options">
                 <label>
-                    <input type="radio" name="credential-type" value="marketing" checked>
+                    <input style= "font-family:Inter, sans-serif; color:white"  type="radio" name="credential-type" value="marketing" checked>
                     Marketing
                 </label>
                 <label>
-                    <input type="radio" name="credential-type" value="cliente">
+                    <input style= "font-family:Inter, sans-serif; color:white" type="radio" name="credential-type" value="cliente">
                     Cliente
                 </label>
             </div>
-            <label for="id-asignada">Id asignada:</label>
+            <label style= "font-family:Inter, sans-serif; color:white" for="id-asignada">Id asignada:</label>
             <input type="text" id="id-asignada" name="id-asignada" required>
-            <button type="submit">Iniciar sesión</button>
+            <button style= "font-family:Inter, sans-serif; color:white" type="submit">Iniciar sesión</button>
         </form>
     </div>
 </body>
