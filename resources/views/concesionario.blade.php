@@ -1,9 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concesionario</title>
+       <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="\proyectoBD\public\styles\styles.css">
+    <title>Interfaz de Usuario</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -21,6 +28,8 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top:5rem;
+            margin-left:0rem;
         }
         .search-container {
             display: flex;
@@ -59,36 +68,41 @@
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Concesionario</h1>
-        <div class="search-container">
-            <input type="text" id="search" placeholder="Buscar...">
-            <button onclick="cerrarSesion()">Cerrar Sesión</button>
-        </div>
+<body style="background-color:white">
+<nav id="navprincipal">
+        <div id="logonav">
+            <div id="logonavprincipal">
+                <div class="logo">
+                <img src="\proyectoBD\public\img\logo.png" alt="">
+                </div>
+            </div>
+            <input type="text" id="search" placeholder="Buscar vehículo..." style="width:50%; margin-top:4rem">
+            <a onclick="cerrarSesion()" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Cerrar sesión</a>
+    </nav>
+       
         <table id="data-table">
             <thead>
                 <tr>
-                    <th>Nombre</th>
+                <th>Nombre</th>
                     <th>Dirección</th>
                     <th>Número de Teléfono</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- La tabla está vacía, no se muestran datos -->
+                
             </tbody>
         </table>
     </div>
     <script>
-        // Función para cerrar sesión
+        
         function cerrarSesion() {
             alert("Sesión cerrada.");
-            // Aquí puedes agregar la lógica para cerrar sesión
+            
         }
 
-        // Event listener para el buscador
+        
         document.getElementById('search').addEventListener('input', function() {
-            // Aquí puedes agregar lógica para filtrar si decides mostrar datos más adelante
+            
         });
     </script>
 </body>
