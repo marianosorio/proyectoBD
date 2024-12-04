@@ -21,8 +21,7 @@
                 <img src="\proyectoBD\public\img\logo.png" alt="">
                 </div>
             </div>
-            <button type="button" id="loginboton">INICIAR SESIÓN</button>
-        </div>
+            <a href="\proyectoBD\resources\views\login.blade.php" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">INICIAR SESIÓN</a>
     </nav>
     <section class="contenedor-bienvenida">
         <div id="contenedor-cel">
