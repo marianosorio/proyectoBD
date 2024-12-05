@@ -45,3 +45,6 @@ Route::get('/buscador', function () {
 
 Route::get('/concesionario/mostrar', 
           [ConcesionarioController::class, 'mostrarConcesionario']);
+
+Route::get('/vehiculo/mostrar', 
+          [VehiculoController::class, 'mostrarVehiculo']);

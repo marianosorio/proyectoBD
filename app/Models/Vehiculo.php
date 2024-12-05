@@ -9,8 +9,7 @@ class Concesionario extends Model
 {
     use HasFactory;
 
-    protected $table = 'concesionarios'; 
-    protected $primaryKey = 'idConcesionario';
-    protected $fillable = ['nombre', 'direccion', 'noTelefono'];
+    protected $table = 'vehiculos'; 
+    protected $primaryKey = 'VIN';
     public $timestamps = false;
 }

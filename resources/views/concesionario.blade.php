@@ -39,7 +39,7 @@
                 <tr>
                     <td>{{ $concesionario->nombre }}</td>
                     <td>{{ $concesionario->direccion }}</td>
-                    <td>{{ $concesionario->telefono }}</td>
+                    <td>{{ $concesionario->noTelefono }}</td>
                 </tr>
             @endforeach
         </tbody>
