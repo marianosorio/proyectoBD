@@ -41,3 +41,6 @@ Route::get('/buscador', function () {
 Route::get('/concesionario', function () {
     return view('concesionario');
 });
+
+Route::get('/concesionario/mostrar', 
+          [ConcesionarioController::class, 'mostrar']);

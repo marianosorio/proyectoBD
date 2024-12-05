@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Concesionario extends Model
 {
     use HasFactory;
+
+    protected $table = 'concesionarios'; 
+    protected $primaryKey = 'idConcesionario';
+    public $timestamps = false;
 }

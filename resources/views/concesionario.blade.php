@@ -11,7 +11,48 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="\proyectoBD\public\styles\styles.css">
     <title>Interfaz de Usuario</title>
-    <style>
+</head>
+<body style="background-color:white">
+<nav id="navprincipal">
+        <div id="logonav">
+            <div id="logonavprincipal">
+                <div class="logo">
+                <img src="\proyectoBD\public\img\logo.png" alt="">
+                </div>
+            </div>
+            <input type="text" id="search" placeholder="Buscar vehículo..." style="width:50%; margin-top:4rem">
+            <a onclick="cerrarSesion()" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Cerrar sesión</a>
+    </nav>
+       
+        <table id="data-table">
+            <thead>
+                <tr>
+                <th>Nombre</th>
+                    <th>Dirección</th>
+                    <th>Número de Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+    </div>
+    <script>
+        
+        function cerrarSesion() {
+            alert("Sesión cerrada.");
+            
+        }
+
+        
+        document.getElementById('search').addEventListener('input', function() {
+            
+        });
+    </script>
+</body>
+</html>
+
+<style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
@@ -67,43 +108,3 @@
             background-color: #f2f2f2;
         }
     </style>
-</head>
-<body style="background-color:white">
-<nav id="navprincipal">
-        <div id="logonav">
-            <div id="logonavprincipal">
-                <div class="logo">
-                <img src="\proyectoBD\public\img\logo.png" alt="">
-                </div>
-            </div>
-            <input type="text" id="search" placeholder="Buscar vehículo..." style="width:50%; margin-top:4rem">
-            <a onclick="cerrarSesion()" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Cerrar sesión</a>
-    </nav>
-       
-        <table id="data-table">
-            <thead>
-                <tr>
-                <th>Nombre</th>
-                    <th>Dirección</th>
-                    <th>Número de Teléfono</th>
-                </tr>
-            </thead>
-            <tbody>
-                
-            </tbody>
-        </table>
-    </div>
-    <script>
-        
-        function cerrarSesion() {
-            alert("Sesión cerrada.");
-            
-        }
-
-        
-        document.getElementById('search').addEventListener('input', function() {
-            
-        });
-    </script>
-</body>
-</html>
