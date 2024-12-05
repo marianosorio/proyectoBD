@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ConcesionarioController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,9 +39,9 @@ Route::get('/buscador', function () {
     return view('buscador');
 });
 
-Route::get('/concesionario', function () {
+/*Route::get('/concesionario', function () {
     return view('concesionario');
-});
+});*/
 
 Route::get('/concesionario/mostrar', 
-          [ConcesionarioController::class, 'mostrar']);
+          [ConcesionarioController::class, 'mostrarConcesionario']);
