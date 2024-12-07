@@ -33,21 +33,23 @@
         <table id="data-table">
             <thead>
                 <tr>
-                    <th>VIN del vehiculo</th>
-                    <th>Color</th>
-                    <th>No. Motor</th>
-                    <th>Transmisión</th>
-                    <th>Acciones</th>
+                    <th>Nombre</th>
+                    <th>Estilo de carroceria</th>
+                    <th>Marca</th>
+                    <th>Ver vehiculo</th>
                 </tr>
             </thead>
             <tbody>
-            @foreach ($vehiculos as $vehiculo)
+            @foreach ($modelos as $modelo)
                 <tr>
-                    <td>{{ $vehiculo->VIN }}</td>
-                    <td>{{ $vehiculo->color }}</td>
-                    <td>{{ $vehiculo->noMotor }}</td>
-                    <td>{{ $vehiculo->transmision }}</td>
-                    
+                    <td>{{ $modelo->nombre }}</td>
+                    <td>{{ $modelo->estiloCarroceria }}</td>
+                    <td>{{ $modelo->marca }}</td>
+                    <td>
+                    <a href="{{ url('/vehiculo/mostrar')}}" class="btn btn-primary">
+                                Ver Vehículos
+                            </a>
+                        </td>
                 </tr>
             @endforeach
         </tbody>

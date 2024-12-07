@@ -21,7 +21,7 @@
             </div>
         </div>
         <input type="text" id="search" placeholder="Buscar vehículo..." style="width:50%; margin-top:4rem">
-        <a onclick="cerrarSesion()" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Cerrar sesión</a>
+        <a onclick="cerrarSesion()" href="{{ url('/landing/inicio') }}" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Cerrar sesión</a>
     </div>
 </nav>
 

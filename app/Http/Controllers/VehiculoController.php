@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Models\Concesionario;
+use App\Models\Vehiculo;
 
 
-class ConcesionarioController extends Controller
+class VehiculoController extends Controller
 {
-    public function mostrarVehiculo(){
+        public function mostrarVehiculo(){
         $vehiculos = Vehiculo::all();
         return view ('buscador', compact ('vehiculos'));
-    }
+        }
+    
 }

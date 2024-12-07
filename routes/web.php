@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConcesionarioController;
+use App\Http\Controllers\VehiculoController;
+use App\Http\Controllers\ModeloController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,3 +50,6 @@ Route::get('/concesionario/mostrar',
 
 Route::get('/vehiculo/mostrar', 
           [VehiculoController::class, 'mostrarVehiculo']);
+
+Route::get('/modelo/mostrar', 
+          [ModeloController::class, 'mostrarModelo']);
