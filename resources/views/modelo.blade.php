@@ -20,11 +20,10 @@
                 <img src="\proyectoBD\public\img\logo.png" alt="">
                 </div>
             </div>
-            
-            <input type="text" id="search" class="form-control" style="width:40%; margin-top:3rem" placeholder="Buscar vehículo...">
-    <button class="btn btn-primary" id="searchBtn" style="margin-top:3rem;margin-left:-10rem" type="button">
-        <i class="bi bi-search"></i> 
-    </button>
+            <form class="form-inline my-2 my-lg-0">
+            <input name="buscarpor" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" value="{{ $buscarpor ?? '' }}">
+  <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left:30rem" type="submit">Search</button>
+</form>
             <a onclick="cerrarSesion()" href="{{ url('/landing/inicio') }}"  class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">
   Cerrar sesión
 </a>

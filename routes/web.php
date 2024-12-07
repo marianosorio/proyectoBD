@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ConcesionarioController;
 use App\Http\Controllers\VehiculoController;
 use App\Http\Controllers\ModeloController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,6 +16,16 @@ use App\Http\Controllers\ModeloController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
 
 Route::get('/', function () {
     return view('welcome');
@@ -52,4 +63,8 @@ Route::get('/vehiculo/mostrar',
           [VehiculoController::class, 'mostrarVehiculo']);
 
 Route::get('/modelo/mostrar', 
-          [ModeloController::class, 'mostrarModelo']);
+          [ModeloController::class, 'index']);
+
+
+
+

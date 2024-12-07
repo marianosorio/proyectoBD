@@ -37,7 +37,6 @@
                     <th>Color</th>
                     <th>No. Motor</th>
                     <th>Transmisión</th>
-                    <th>Acciones</th>
                 </tr>
             </thead>
             <tbody>
