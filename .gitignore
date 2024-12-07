@@ -13,3 +13,11 @@ npm-debug.log
 yarn-error.log
 /.idea
 /.vscode
+
+# Ignorar archivos de configuración sensibles
+/config/database.php
+
+# Ignorar archivos temporales y de sistema
+*.log
+*.tmp
+.DS_Store
