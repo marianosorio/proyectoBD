@@ -11,15 +11,11 @@
     <div class="form-container">
         <h2 style="font-family:Inter, sans-serif;color:white; text-align: center;">Inicio de Sesión</h2>
         <form>
-            @csrf
             <p style= "font-family:Inter, sans-serif; color:white; text-align: center;" >Inicia sesión con tu cuenta</p>
             <p style= "font-family:Inter, sans-serif; color:white" >Recuerda especificar tu credencial para acceso</p>
             <p style= "font-family:Inter, sans-serif; color:white" >Tipo de credencial:</p>
             <div class="credential-options">
-                <label>
-                    <input style= "font-family:Inter, sans-serif; color:white"  type="radio" name="credential-type" value="marketing" checked>
-                    Marketing
-                </label>
+
                 <label>
                     <input style= "font-family:Inter, sans-serif; color:white" type="radio" name="credential-type" value="cliente">
                     Cliente

@@ -21,7 +21,9 @@
                 <img src="\proyectoBD\public\img\logo.png" alt="">
                 </div>
             </div>
-            <a href="\proyectoBD\resources\views\login.blade.php" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">INICIAR SESIÓN</a>
+            <a href="\proyectoBD\resources\views\login.blade.php" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Inicio para marketing</a>
+            <a href="\proyectoBD\resources\views\login.blade.php" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Inicio para el admin</a>
+            <a href="\proyectoBD\resources\views\login.blade.php" class="btn btn-primary d-flex align-items-center justify-content-center" id="loginboton" style="height: 50px;">Inicio para el cliente</a>
     </nav>
     <section class="contenedor-bienvenida">
         <div id="contenedor-cel">

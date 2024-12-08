@@ -41,5 +41,10 @@ class ConcesionarioadminController extends Controller
         return redirect()->route('concesionario.admin.inicio');
     }
 
+    public function ventas()
+{
+    return $this->hasMany(Venta::class, 'idConcesionario');
+}
+
 
 }

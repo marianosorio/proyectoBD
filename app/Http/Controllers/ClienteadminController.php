@@ -45,4 +45,9 @@ class ClienteadminController extends Controller
 
         return redirect()->route('cliente.admin.inicio');
     }
+
+    public function ventas()
+    {
+    return $this->hasMany(Venta::class, 'idCliente');
+    }
 }

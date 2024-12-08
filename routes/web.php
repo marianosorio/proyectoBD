@@ -13,6 +13,7 @@ use App\Http\Controllers\ProveedoradminController;
 use App\Http\Controllers\Enum_coloradminController;
 use App\Http\Controllers\Enum_marcaadminController;
 use App\Http\Controllers\Enum_transmisionadminController;
+use App\Http\Controllers\VentasadminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -160,3 +161,6 @@ Route::get('/vehiculos/crear',
        
 Route::post('/vehiculos/guardar', 
         [VehiculoController::class, 'almacenar'])->name('vehiculo.admin.guardar');
+
+Route::get('/ventas', 
+        [VentasadminController::class, 'index'])->name('ventas.admin.inicio');
