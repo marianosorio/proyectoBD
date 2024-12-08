@@ -15,4 +15,8 @@ class Enum_marca extends Model
     protected $keyType = 'string'; 
     protected $fillable = ['marca'];
     public $timestamps = false;
+
+    public function modelos(){
+        return $this->hasMany(Modelo::class, 'marca', 'marca');
+    }
 }

@@ -26,11 +26,10 @@
                         <input name="estiloCarroceria" type="text"class="form-control"/>
                     </div>
                     <div class="form-group">
-                        <label for="tipoPropiedad">marca:</label>
+                        <label for="marca">marca:</label>
                         <input name="marca" type="text" class="form-control"/>
                     </div>
 
-                    
                     <br>
                     <div class="form-group">
                         <a class="btn btn-warning" href="{{ route('modelo.admin.inicio') }}">Volver</a>

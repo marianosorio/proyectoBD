@@ -17,16 +17,16 @@
         <div class="d-flex flex-wrap justify-content-center gap-3">
             <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\planta\admin"><i class="fas fa-industry"></i> Plantas</a>
             <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\modelo\admin"><i class="fas fa-car"></i> Modelos</a>
-            <a class="btn btn-custom px-4 py-2"><i class="fas fa-link"></i> Modelos x Plantas</a>
-            <a class="btn btn-custom px-4 py-2"><i class="fas fa-handshake"></i> Modelos x Proveedores</a>
             <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\enum_color\admin"><i class="fas fa-palette"></i> Enum Color</a>
             <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\enum_marca\admin"><i class="fas fa-pin"></i> Enum Marca</a>
             <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\enum_transmision\admin"><i class="fas fa-cogs"></i> Enum Transmisi&oacute;n</a>
             <a class="btn btn-custom px-4 py-2"><i class="fas fa-car-side"></i> Veh&iacute;culos</a>
             <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\concesionario\admin"><i class="fas fa-store"></i> Concesionarios</a>
             <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\cliente\admin"><i class="fas fa-user"></i> Clientes</a>
-            <a class="btn btn-custom px-4 py-2"><i class="fas fa-money-check-alt"></i> Ventas</a>
-            <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\proveedores\admin"><i class="fas fa-handshake"></i> Proveedores</a>
+            <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\venta"><i class="fas fa-money-check-alt"></i> Ventas</a>
+            <a class="btn btn-custom px-4 py-2" href="\proyectoBD\public\proveedor\admin"><i class="fas fa-handshake"></i> Proveedores</a>
+            <a class="btn btn-custom px-4 py-2"><i class="fas fa-link"></i> Modelos x Plantas</a>
+            <a class="btn btn-custom px-4 py-2"><i class="fas fa-handshake"></i> Modelos x Proveedores</a>
         </div>
     </div>
 </body>

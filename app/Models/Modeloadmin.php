@@ -13,4 +13,9 @@ class Modeloadmin extends Model
     protected $primaryKey='idModelo';
     //protected $fillable = ['nombre', 'estiloCarroceria', 'marca'];
     public $timestamps = false;
+
+    public function enumMarca()
+    {
+        return $this->belongsTo(Enum_marca::class, 'marca'); // 'marca' es la clave foránea
+    }
 }

@@ -21,7 +21,7 @@ class ProveedoradminController extends Controller
     }
 
     public function agregarProveedor(){
-        return view ('agregarproveedor');
+        return view ('agregarProveedor');
     }
 
     public function guardarProveedor(Request $req) {

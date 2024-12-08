@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Conoce nuestros vehículos y <br> proveedores</h1>
-    <a href="\proyectoBD\public\modelo\mostrar" class="button"><i class="fas fa-car"></i> Verifica nuestros vehículos</a>
+    <a href="\proyectoBD\public\vehiculo\mostrar" class="button"><i class="fas fa-car"></i> Verifica nuestros vehículos</a>
     <a href="\proyectoBD\public\concesionario\mostrar" class="button1"><i class="fas fa-map-marker-alt"></i> Verifica ubicaciones de concesionarios</a>
     <button class="buttoncerrar" href="{{ url('/landing/inicio') }}" >Cerrar sesión</button>
 </body>
