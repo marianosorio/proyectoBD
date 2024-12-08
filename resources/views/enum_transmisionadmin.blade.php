@@ -28,27 +28,18 @@
   Cerrar sesión
 </a>
     </nav>
-    <a class="btn btn-success" href="{{ route('modelo.admin.agregar') }}">Agregar Nuevo</a>
        
         <table id="data-table">
             <thead>
                 <tr>
-                    <th>Nombre</th>
-                    <th>Estilo de carroceria</th>
-                    <th>Marca</th>
-                    <th>Ver vehiculo</th>
+                    <th>Transmision</th>
                 </tr>
             </thead>
             <tbody>
-            @foreach ($modelos as $modelo)
+            @foreach ($enum_transmision as $transmision)
                 <tr>
-                    <td>{{ $modelo->nombre }}</td>
-                    <td>{{ $modelo->estiloCarroceria }}</td>
-                    <td>{{ $modelo->marca }}</td>
+                    <td>{{$transmision->transmision}}</td>
                     <td>
-                    <a href="{{ url('/vehiculo/mostrar')}}" class="btn btn-primary">
-                                Ver Vehículos
-                            </a>
                         </td>
                 </tr>
             @endforeach
@@ -56,10 +47,8 @@
             <tbody>
                 
             </tbody>
-           
         </table>
-       
-    <br>
+        <a class="btn btn-success" href="{{ route('enum_transmision.admin.agregar') }}">Agregar Nuevo</a>
     </div>
     <script>
         

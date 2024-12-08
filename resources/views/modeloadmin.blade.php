@@ -28,11 +28,11 @@
   Cerrar sesión
 </a>
     </nav>
-    <a class="btn btn-success" href="{{ route('modelo.admin.agregar') }}">Agregar Nuevo</a>
        
         <table id="data-table">
             <thead>
                 <tr>
+                    <th>Id del modelo</th>
                     <th>Nombre</th>
                     <th>Estilo de carroceria</th>
                     <th>Marca</th>
@@ -42,9 +42,10 @@
             <tbody>
             @foreach ($modelos as $modelo)
                 <tr>
+                    <td>{{ $modelo->idModelo }}</td>
                     <td>{{ $modelo->nombre }}</td>
                     <td>{{ $modelo->estiloCarroceria }}</td>
-                    <td>{{ $modelo->marca }}</td>
+                    <td>{{ $modelo->marca}}</td>
                     <td>
                     <a href="{{ url('/vehiculo/mostrar')}}" class="btn btn-primary">
                                 Ver Vehículos
@@ -56,10 +57,8 @@
             <tbody>
                 
             </tbody>
-           
         </table>
-       
-    <br>
+        <a class="btn btn-success" href="{{ route('modelo.admin.agregar') }}">Agregar Nuevo</a>
     </div>
     <script>
         

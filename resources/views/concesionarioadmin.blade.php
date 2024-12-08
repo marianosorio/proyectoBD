@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -32,6 +31,7 @@
     <table id="data-table" class="table table-striped">
         <thead>
             <tr>
+                <th>Id del Concesionario</th>
                 <th>Nombre</th>
                 <th>Dirección</th>
                 <th>Número de Teléfono</th>
@@ -40,6 +40,7 @@
         <tbody>
             @foreach ($concesionarios as $concesionario)
                 <tr>
+                    <td>{{ $concesionario->idConcesionario }}</td>
                     <td>{{ $concesionario->nombre }}</td>
                     <td>{{ $concesionario->direccion }}</td>
                     <td>{{ $concesionario->noTelefono }}</td>
@@ -47,6 +48,7 @@
             @endforeach
         </tbody>
     </table>
+    <a class="btn btn-success" href="{{ route('concesionario.admin.agregar') }}">Agregar Nuevo</a>
 </div>
 
 <script>
